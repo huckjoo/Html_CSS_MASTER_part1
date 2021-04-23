@@ -12,17 +12,31 @@ nav {
   justify-content: center;
   flex-basis: 25%;
 }
-.nav__features {
+.nav__menus {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-basis: 75%;
 }
-.nav__features a {
+.nav__menus li {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+.nav__menus a {
   text-decoration: none;
   color: white;
+  padding: 5px;
+  border-radius: 10%;
 }
-.nav__features:last-child {
+.nav__menus li:hover {
+  background-color: #f77b3d;
+}
+.nav__menus li:last-child {
+  margin-right: 10px;
+}
+.nav__menus:last-child {
   margin-right: 20px;
 }
 .nav__get-start {
@@ -34,7 +48,7 @@ nav {
   display: none;
   position: absolute;
   top: 10px;
-  right: 30px;
+  right: 40px;
   text-decoration: none;
   font-size: 24px;
   color: white;
@@ -43,30 +57,37 @@ nav {
   nav {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 400px;
     align-items: center;
     justify-content: center;
   }
-  .nav__features {
-    display: flex;
+  .nav__menus {
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+  }
+  .nav__menus {
+    width: 100vw;
+  }
+  .nav__menus a:hover {
+    background-color: #f77b3d;
   }
   .nav__logo {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
-    margin-left: 20px;
-    align-items: center;
-    height: 20px;
+    align-items: flex-start;
   }
   .nav__logo i {
-    font-size: 40px;
+    margin-left: 10px;
+    font-size: 35px;
+    padding: 8px 12px;
   }
   .nav__hamburger {
     display: block;
+  }
+  .nav__menus.active {
+    display: flex;
   }
 }
