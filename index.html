@@ -5,24 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HCM-part1</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <h1></h1>
     </header>
-    <nav>
-      <div>LOGO</div>
-      <div>
-        <div>Features</div>
-        <div>Premium</div>
-        <div>Pricing</div>
-        <div>Abount</div>
-        <div>|</div>
-        <div>Sign in</div>
-        <div>Get Started</div>
+    <nav class="nav">
+      <div class="nav__logo"><i class="fas fa-award fa-3x"></i></div>
+      <div class="nav__features">
+        <div><a href="#">Features</a></div>
+        <div><a href="#">Premium</a></div>
+        <div><a href="#">Pricing</a></div>
+        <div><a href="#">About</a></div>
+        <div><a href="#">|</a></div>
+        <div><a href="#">Sign in</a></div>
+        <div class="nav__get-start">
+          <div class="nav__get-started"><a href="#">Get Started</a></div>
+        </div>
       </div>
+      <a class="nav__hamburger" href="#"><i class="fas fa-bars"></i></a>
     </nav>
     <header>
+      <div><img class="header__img" src="img/sushi.jpg" /></div>
       <h1>Propel your business</h1>
       <p>say hello to the world</p>
       <button>Get started</button>
@@ -87,5 +92,10 @@
       <div></div>
       <div>social</div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
   </body>
 </html>
