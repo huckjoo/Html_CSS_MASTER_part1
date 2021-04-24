@@ -1,4 +1,39 @@
+header {
+  position: relative;
+}
 .header__img {
-  width: 100vw;
-  height: 500px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  filter: brightness(50%);
+}
+.header__box {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__title {
+  color: white;
+  font-size: 60px;
+  font-weight: 800;
+}
+.header__description {
+  color: white;
+  font-size: 30px;
+  margin: 40px 0px;
+}
+.header__btn {
+  padding: 15px;
+  background: none;
+  border: 3px solid white;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.header__btn:hover {
+  border: 3px solid #f77b3d;
+  color: #f77b3d;
+  cursor: pointer;
 }
