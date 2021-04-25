@@ -47,3 +47,24 @@
     max-width: 400px;
   }
 }
+
+.main__container {
+  margin-top: 30px;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden; /*창 벗어나면 안보이게 하는 용도 */
+}
+.main__slider {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  transition: left 0.5s;
+}
+.main__slider__article img {
+  height: 500px;
+  width: auto;
+}
