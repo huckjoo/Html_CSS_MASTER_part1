@@ -47,24 +47,26 @@
     max-width: 400px;
   }
 }
-
-.main__container {
+.main__slider {
   margin-top: 30px;
   height: 500px;
   width: 100%;
   display: flex;
   position: relative;
-  overflow: hidden; /*창 벗어나면 안보이게 하는 용도 */
+  justify-content: center;
+  align-items: center;
 }
-.main__slider {
-  position: relative;
-  overflow: hidden;
+.main__slider__box {
   display: flex;
-  flex-direction: row;
-  height: 100%;
-  transition: left 0.5s;
+  position: relative;
 }
-.main__slider__article img {
+.main__slider img {
   height: 500px;
   width: auto;
+  position: absolute;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+.showing {
+  z-index: 1;
 }
