@@ -70,3 +70,25 @@
 .showing {
   z-index: 1;
 }
+.main__slider__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main__slider__description_p {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 300;
+  width: 450px;
+}
+.main__slider__description_p p:first-child {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.main__slider__description_p p:nth-child(2) {
+  color: #7eb963;
+}
+.main__slider__description_p p:nth-child(2) :hover {
+  cursor: pointer;
+}
