@@ -92,3 +92,27 @@
 .main__slider__description_p p:nth-child(2) :hover {
   cursor: pointer;
 }
+.main__slider__description__line {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main__premium {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.main__premium__img {
+  height: 100%;
+  width: 300px;
+  padding: 20px;
+}
+.main__premium__description p {
+  line-height: 120%;
+}
+.main__premium__description p:first-child {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
