@@ -10,7 +10,6 @@ const firstSlide = document.querySelector('.main__slider__box:first-child');
 const lastSlide = document.querySelector('.main__slider__box:last-child');
 let startSlide = function(){
     const thisSlide = document.querySelector('.showing');
-
     if(thisSlide){
         thisSlide.classList.remove('showing');
         const nextSlide = thisSlide.nextElementSibling;
@@ -23,8 +22,24 @@ let startSlide = function(){
         firstSlide.classList.add('showing');
     }
 }
-setInterval(startSlide,2000);
-
+let backslide = function(){
+    const thisSlide = document.querySelector('.showing');
+    if(thisSlide){
+        thisSlide.classList.remove('showing');
+        const backSlide = thisSlide.previousElementSibling;
+        if(backSlide){
+            backSlide.classList.add('showing');
+        }else{
+            lastSlide.classList.add('showing');
+        }
+    }else{
+        lastSlide.classList.add('showing');
+    }
+}
+const btn__L = document.querySelector('.main__slider__btn__L');
+const btn__R = document.querySelector('.main__slider__btn__R')
+btn__R.addEventListener('click',startSlide);
+btn__L.addEventListener('click',backslide);
 
 
 

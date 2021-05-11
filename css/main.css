@@ -72,6 +72,7 @@
 }
 .main__slider__description {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -115,4 +116,20 @@
 .main__premium__description p:first-child {
   font-size: 25px;
   margin-bottom: 20px;
+}
+.main__slider__btn {
+  font-size: 34px;
+  z-index: 3;
+  color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -250px;
+  width: 100%;
+}
+.main__slider__btn i:hover {
+  cursor: pointer;
+}
+.main__slider__btn__L {
+  margin-right: 300px;
 }

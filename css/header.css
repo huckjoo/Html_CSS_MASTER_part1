@@ -37,3 +37,10 @@ header {
   color: #f77b3d;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .header__img {
+    width: 100%;
+    max-height: 600px;
+    filter: brightness(50%);
+  }
+}
